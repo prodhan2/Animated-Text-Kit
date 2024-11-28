@@ -1,9 +1,64 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0" version="24.9.3">
   <diagram name="Page-1" id="MKebmNgChAy3RsxQ48va">
-    <mxGraphModel>
+    <mxGraphModel dx="695" dy="354" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="qYofwod9ED1lpS_sfTFN-1" value="User" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="115" y="20" width="93" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="qYofwod9ED1lpS_sfTFN-2" value="Web Server" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="91" y="141" width="143" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="qYofwod9ED1lpS_sfTFN-3" value="Database" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="45" y="262" width="126" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="qYofwod9ED1lpS_sfTFN-4" value="Log File" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="247" y="262" width="116" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="qYofwod9ED1lpS_sfTFN-5" value="Data Warehouse" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="20" y="382" width="175" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="qYofwod9ED1lpS_sfTFN-6" value="Sends Request" style="curved=1;startArrow=none;endArrow=block;exitX=0.36;exitY=1.01;entryX=0.4;entryY=0;rounded=0;" edge="1" parent="1" source="qYofwod9ED1lpS_sfTFN-1" target="qYofwod9ED1lpS_sfTFN-2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="128" y="105" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qYofwod9ED1lpS_sfTFN-7" value="Fetch Data" style="curved=1;startArrow=none;endArrow=block;exitX=0.19;exitY=1;entryX=0.32;entryY=-0.01;rounded=0;" edge="1" parent="1" source="qYofwod9ED1lpS_sfTFN-2" target="qYofwod9ED1lpS_sfTFN-3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="53" y="225" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qYofwod9ED1lpS_sfTFN-8" value="Returns Data" style="curved=1;startArrow=none;endArrow=block;exitX=0.67;exitY=-0.01;entryX=0.5;entryY=1;rounded=0;" edge="1" parent="1" source="qYofwod9ED1lpS_sfTFN-3" target="qYofwod9ED1lpS_sfTFN-2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="162" y="225" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qYofwod9ED1lpS_sfTFN-9" value="Sends Response" style="curved=1;startArrow=none;endArrow=block;exitX=0.76;exitY=0;entryX=0.92;entryY=1.01;rounded=0;" edge="1" parent="1" source="qYofwod9ED1lpS_sfTFN-2" target="qYofwod9ED1lpS_sfTFN-1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="258" y="105" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qYofwod9ED1lpS_sfTFN-10" value="Logs Request" style="curved=1;startArrow=none;endArrow=block;exitX=0.9;exitY=1;entryX=0.5;entryY=-0.01;rounded=0;" edge="1" parent="1" source="qYofwod9ED1lpS_sfTFN-2" target="qYofwod9ED1lpS_sfTFN-4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="305" y="225" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qYofwod9ED1lpS_sfTFN-11" value="Stores Data" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0.01;rounded=0;" edge="1" parent="1" source="qYofwod9ED1lpS_sfTFN-3" target="qYofwod9ED1lpS_sfTFN-5">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
